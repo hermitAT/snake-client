@@ -23,6 +23,12 @@ const setupInput = function(conn) {
     if (data === "d") {
       connection.write("Move: right");
     }
+    if (data === "1") {
+      connection.write("Say: hsssssssss");
+    }
+    if (data === "2") {
+      connection.write("Say: wazzup");
+    }
   });
   stdin.on('data', (handleUserInterfaces));
   return stdin;
